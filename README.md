@@ -35,3 +35,6 @@ so that i can plan a trip accordingly
 - THEN I am again presented with current and future conditions for that city
 - WHEN I open the weather dashboard
 - THEN I am presented with the last searched city forecast.
+
+#### Link to deployed app :
+- https://mnm1506.github.io/06-Weather-Dashboard/
