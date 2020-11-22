@@ -3,6 +3,7 @@ var date = moment().format(" (MM/DD/YYYY) ");
 
 var city;
 var cardB = $(".card-body");
+var searchHistory = [];
 // Function to get search history :
 function getHistory() {
     var savedCitys = JSON.parse(localStorage.getItem("searchHistory"));
@@ -24,7 +25,7 @@ function getHistory() {
 // getHistory() call:
 getHistory();
 
-var searchHistory = [];
+
 // searches and adds to history
 $("#searchCity").click(function() {
     city = $("#city").val();
