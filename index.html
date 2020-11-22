@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="jumbotron container-fluid bg-dark mt-2 text-center p-2">
+            <h1> <strong>Weather Dashboard</strong> </h1>
+        </div>
+
+        <div class="row">
+            <div class="col-4 bg-light">
+                <div class="mt-2"><b>Search for a City :</b></div>
+                <div class="input-group mb-3">
+                    <input type="text" id="city" class="form-control" placeholder="City name">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="searchCity"><i
+                                class="fa fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="list-group"></div>
+            </div>
+            <div class="col-8">
+                <div class="row p-2">
+                    <div class="card">
+                        <div class="card-body"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <h4>5-Day Forecast:</h4>
+                </div>
+                <!-- 5 Day Forecast -->
+                <div id="weeklyForecast" class="row"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--jQuery JS-->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous"></script>
+    <!--Code to Jvascript File-->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
